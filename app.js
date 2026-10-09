@@ -36,6 +36,9 @@ function submitAnswer(answer) {
   if (answers.length !== question) return;
   const s = SCENARIOS[question];
   answers.push(answer);
+  main.querySelector('.progress-row span:last-child').textContent = `${score()} correct so far`;
+  main.querySelector('[role="progressbar"]').setAttribute('aria-valuenow', String(question+1));
+  main.querySelector('.progress .current').classList.replace('current','done');
   const correct = answer === s.correct;
   main.querySelectorAll('[data-answer]').forEach(button => {
     const index = Number(button.dataset.answer);
