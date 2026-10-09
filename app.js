@@ -80,7 +80,7 @@ function drawBadge() {
   ctx.save();ctx.beginPath();ctx.roundRect(0,0,1200,760,28);ctx.clip();
   ctx.strokeStyle='#364159';ctx.lineWidth=2;[160,225,290].forEach(r=>{ctx.beginPath();ctx.arc(1050,145,r,0,Math.PI*2);ctx.stroke();});ctx.restore();
   ctx.textAlign='left';ctx.fillStyle='#b8eccd';ctx.font='700 26px system-ui';ctx.fillText('signalcheck.',70,87);
-  ctx.font='600 15px system-ui';ctx.fillStyle='#c5ccda';ctx.fillText('THE ERP CYBER CHALLENGE',70,129);
+  ctx.font='600 15px system-ui';ctx.fillStyle='#c5ccda';ctx.fillText('CYBER SECURITY MONTH CHALLENGE',70,129);
   ctx.fillStyle='#b8eccd';ctx.beginPath();ctx.moveTo(1010,78);ctx.lineTo(1085,107);ctx.lineTo(1085,167);ctx.bezierCurveTo(1085,210,1010,258,1010,258);ctx.bezierCurveTo(1010,258,935,210,935,167);ctx.lineTo(935,107);ctx.closePath();ctx.fill();
   ctx.strokeStyle='#202b42';ctx.lineWidth=13;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();ctx.moveTo(979,158);ctx.lineTo(1000,179);ctx.lineTo(1044,132);ctx.stroke();
   ctx.fillStyle='#a9b4c9';ctx.font='700 17px system-ui';ctx.fillText('RADAR CHECK COMPLETE',70,219);
